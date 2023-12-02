@@ -1,0 +1,391 @@
+{
+    "OBD0": {
+        "DPFI": {},
+        "MPFI": {}
+    },
+    "OBD1": {
+        "connector_a": {
+            "all": [
+                {
+                    "number": 1,
+                    "description": "Injector 1",
+                    "wire_color": "Brown"
+                },
+                {
+                    "number": 2,
+                    "description": "Injector 4",
+                    "wire_color": "Yellow"
+                },
+                {
+                    "number": 3,
+                    "description": "Injector 2",
+                    "wire_color": "Red"
+                },
+                {
+                    "number": 5,
+                    "description": "Injector 3",
+                    "wire_color": "Light Blue"
+                },
+                {
+                    "number": 11,
+                    "description": "EGR - (Exhaust Gas Recirculation Valve)",
+                    "wire_color": [
+                        "Red",
+                        "Orange/Blue"
+                    ]
+                },
+                {
+                    "number": 12,
+                    "description": "FANC - (Radiator Fan Control)",
+                    "wire_color": "Yellow/Green"
+                },
+                {
+                    "number": 13,
+                    "description": "MIL - (Malfunction Indicator Light)",
+                    "wire_color": "Green/Orange"
+                },
+                {
+                    "number": 15,
+                    "description": "ACC (A/C Compressor Clutch)",
+                    "wire_color": "Black/Red"
+                },
+                {
+                    "number": 16,
+                    "description": "ALTC - Alternator Control",
+                    "wire_color": "White/Green"
+                },
+                {
+                    "number": 20,
+                    "description": "PCS - (Evap Purge Control Solenoid Valve)",
+                    "wire_color": "Red"
+                },
+                {
+                    "number": 21,
+                    "description": "ICM - (Ignition Control Module)",
+                    "wire_color": "Red/Green"
+                },
+                {
+                    "number": 22,
+                    "description": "ICM - (Ignition Control Module)",
+                    "wire_color": "Red/Green",
+                    "notes": "De-number If Using OBD1 AEM EMS"
+                },
+                {
+                    "number": 23,
+                    "description": "PG1 - (Power Ground)",
+                    "wire_color": "Black"
+                },
+                {
+                    "number": 24,
+                    "description": "PG2 - (Power Ground)",
+                    "wire_color": "Black"
+                },
+                {
+                    "number": 25,
+                    "description": "IGP2 - (12v Power Source)",
+                    "wire_color": "Yellow/Black"
+                },
+                {
+                    "number": 26,
+                    "description": "LG1 - (Logic Ground)",
+                    "wire_color": "Black/Red"
+                }
+            ],
+            "civic": [
+                {
+                    "number": 4,
+                    "wire_color": "Green/Yellow"
+                },
+                {
+                    "number": 6,
+                    "wire_color": "Orange/White",
+                    "specific_models": [
+                        "Civic VX D15Z1: HTCNTL (5 Wire O2)"
+                    ]
+                },
+                {
+                    "number": 7,
+                    "wire_color": "Green/Yellow"
+                },
+                {
+                    "number": 19,
+                    "wire_color": "White",
+                    "specific_models": [
+                        "H22A",
+                        "Empty Slot For Civic/Integra"
+                    ]
+                },
+                {
+                    "number": 17,
+                    "specific_models": [
+                        "Integra GSR B18C"
+                    ]
+                }
+            ],
+            "integra": [
+                {
+                    "number": 4,
+                    "wire_color": "Green/Blue"
+                },
+                {
+                    "number": 7,
+                    "wire_color": "Green/Blue"
+                },
+                {
+                    "number": 17,
+                    "wire_color": "numberk",
+                    "specific_models": [
+                        "Integra GSR B18C"
+                    ]
+                }
+            ]
+        },
+        "connector_b": {
+            "all": [
+                {
+                    "number": 1,
+                    "description": "IGP1 - (Power Ground)",
+                    "wire_color": "Yellow/Black"
+                },
+                {
+                    "number": 2,
+                    "description": "LG2 - (Logic Ground)",
+                    "wire_color": "Brown/Black"
+                },
+                {
+                    "number": 5,
+                    "description": "ACS - (A/C Switch Signal)",
+                    "wire_color": "Blue/Red"
+                },
+                {
+                    "number": 10,
+                    "description": "VSS - (Vehicle Speed Sensor)",
+                    "wire_color": [
+                        "Yellow/Blue",
+                        "Orange"
+                    ]
+                },
+                {
+                    "number": 11,
+                    "description": "CYP P - (CYP Sensor) (P Side Input)",
+                    "wire_color": "Orange"
+                },
+                {
+                    "number": 12,
+                    "description": "CYP M - (CYP Ground) (M Side Signal)",
+                    "wire_color": "White"
+                },
+                {
+                    "number": 13,
+                    "description": "TDC P - (Top Dead Center Ground) (P Side Input)",
+                    "wire_color": "Orange/Blue"
+                },
+                {
+                    "number": 14,
+                    "description": "TDC M - (Top Dead Center Ground) (M Side Signal)",
+                    "wire_color": "White/Blue"
+                },
+                {
+                    "number": 15,
+                    "description": "CKP P - (Crank Position Ground) (P Side Input)",
+                    "wire_color": "Blue/Yellow"
+                },
+                {
+                    "number": 16,
+                    "description": "CKP M - (Crank Position Ground)",
+                    "wire_color": "Blue/Yellow"
+                }
+            ],
+            "civic": [
+                {
+                    "number": 7,
+                    "description": "M/T Clutch Switch (Civic VX Only) Also Used For A/T Function"
+                },
+                {
+                    "number": 8,
+                    "description": "PSPSW - (Power Steering Power Switch Signal)",
+                    "wire_color": "Red/Green (Integra & Civic SI/EX)"
+                },
+                {
+                    "number": 9,
+                    "description": "STS - (Starter Signal Switch)",
+                    "wire_color": "Blue/White"
+                }
+            ],
+            "integra": [
+                {
+                    "number": 8,
+                    "description": "PSPSW - (Power Steering Power Switch Signal)",
+                    "wire_color": "Red/Green (Integra & Civic SI/EX)"
+                },
+                {
+                    "number": 9,
+                    "description": "STS - (Starter Signal Switch)",
+                    "wire_color": "Blue/Red"
+                }
+            ]
+        },
+        "connector_d": {
+            "all": [
+                {
+                    "number": 1,
+                    "description": "VBU - (Voltage Backup)",
+                    "wire_color": [
+                        "White/Blue",
+                        "White/Yellow"
+                    ]
+                },
+                {
+                    "number": 2,
+                    "description": "BKSW - (Brake Switch)",
+                    "wire_color": "Green/White"
+                },
+                {
+                    "number": 10,
+                    "description": "ELD - (Electrical Load Detector)",
+                    "wire_color": [
+                        "Green/Red",
+                        "Green/Black"
+                    ]
+                },
+                {
+                    "number": 11,
+                    "description": "TPS - (Throttle Position Sensor)",
+                    "wire_color": [
+                        "Light Green",
+                        "Red/Black"
+                    ]
+                },
+                {
+                    "number": 13,
+                    "description": "ECT (Engine Coolant Temp Sensor)",
+                    "wire_color": [
+                        "Red/White",
+                        "Yellow/Blue"
+                    ]
+                },
+                {
+                    "number": 15,
+                    "description": "IAT - (Intake Air Temperature Sensor)",
+                    "wire_color": "Red/Yellow"
+                },
+                {
+                    "number": 20,
+                    "description": "VCC2 - (Sensor Voltage For TPS)",
+                    "wire_color": "Yellow/White"
+                },
+                {
+                    "number": 21,
+                    "description": "Sensor Ground",
+                    "wire_color": [
+                        "Green/Blue",
+                        "Blue/White"
+                    ]
+                },
+                {
+                    "number": 22,
+                    "description": "SG2 Sensor Ground",
+                    "wire_color": "Green/White"
+                }
+            ],
+            "integra": [
+                {
+                    "number": 3,
+                    "description": "KS - (Knock Sensor)",
+                    "wire_color": "Red/Blue"
+                },
+                {
+                    "number": 4,
+                    "description": "SCS - (Service Check Signal)",
+                    "wire_color": "Brown/White"
+                }
+            ],
+            "civic": [
+                {
+                    "number": 3,
+                    "description": "KS - (Knock Sensor)",
+                    "wire_color": "Empty Slot For Civic CX/DX/EX/SI, Civic VX D15Z1: LAF Sensor (5 Wire O2)"
+                },
+                {
+                    "number": 4,
+                    "description": "SCS - (Service Check Signal)",
+                    "wire_color": "Brown"
+                },
+                {
+                    "number": 6,
+                    "description": "VTPS/VTM - (VTEC Pressure Switch)",
+                    "wire_color": [
+                        "Blue",
+                        "Light Blue"
+                    ]
+                },
+                {
+                    "number": 7,
+                    "description": "TXD/RXD - (Diagnostic Data Link)",
+                    "wire_color": [
+                        "Light Blue",
+                        "Light Green/Red"
+                    ]
+                },
+                {
+                    "number": 8,
+                    "description": "Empty Slot Civic/Integra Except Civic VX D15z1: LAF Sensor (5 Wire O2) VS+"
+                },
+                {
+                    "number": 9,
+                    "description": "ALT FR - (Alternator FR Charge Signal)",
+                    "wire_color": [
+                        "numberk",
+                        "White/Red"
+                    ]
+                },
+                {
+                    "number": 12,
+                    "description": "EGRL - (EGR Valve Lift Sensor)",
+                    "specific_models": "Civic VX: White/Black 'Empty Slot With Other Models'"
+                },
+                {
+                    "number": 14,
+                    "description": "PHO2S - (Primary Heated O2 Sensor)",
+                    "wire_color": [
+                        "White",
+                        "White/Red",
+                        "Civic D15B8: (1 Wire O2)",
+                        "Civic VX D15Z1: LAF Sensor (5 Wire O2)"
+                    ]
+                },
+                {
+                    "number": 16,
+                    "description": "Empty Slot",
+                    "specific_models": "Civic VX D15Z1: LAF Sensor (5 Wire O2) IP-,VS- Blue/Green"
+                },
+                {
+                    "number": 17,
+                    "description": "MAP - (Map Sensor)",
+                    "wire_color": "White"
+                },
+                {
+                    "number": 18,
+                    "description": "Interlock Control Unit (A/T Related)",
+                    "wire_color": [
+                        "White/Red",
+                        "Civic CX,VX Optional Up-Shift LT numberk/Green 'Empty Slot With Other Models'"
+                    ]
+                },
+                {
+                    "number": 19,
+                    "description": "VCC1 - (Sensor Voltage For MAP)",
+                    "wire_color": "Yellow/Green"
+                }
+            ]
+        }
+    },
+    "OBD2": {
+        "A": {},
+        "B": {},
+        "K-SERIES": {
+            "02-04": {},
+            "05-06": {}
+        }
+    }
+}
