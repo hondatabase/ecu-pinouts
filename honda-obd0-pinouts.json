@@ -1,0 +1,945 @@
+{
+	"metadata": {
+		"title": "Honda OBD0 Pinout",
+		"applicableVehicles": [
+			{
+				"make": "Honda",
+				"model": "Integra",
+				"years": "1990-1991"
+			},
+			{
+				"make": "Honda",
+				"model": "Civic",
+				"years": "1988-1991"
+			},
+			{
+				"make": "Honda",
+				"model": "CRX",
+				"years": "1988-1991"
+			}
+		]
+	},
+	"ecuConnectors": {
+		"C451": {
+			"name": "A (18 Pin)",
+			"pins": [
+				{
+					"pin": 1,
+					"wireColor": "BROWN",
+					"function": {
+						"short": "INJ1",
+						"long": "Injector 1 +"
+					},
+					"test": "1.5V - 2.5 Ohms"
+				},
+				{
+					"pin": 2,
+					"wireColor": "BLACK",
+					"function": {
+						"short": "PG1",
+						"long": "Power Ground (Main Relay), A4"
+					}
+				},
+				{
+					"pin": 3,
+					"wireColor": "RED",
+					"function": {
+						"short": "INJ2",
+						"long": "Injector 2 +"
+					},
+					"test": "1.5V - 2.5 Ohms"
+				},
+				{
+					"pin": 4,
+					"wireColor": "BLACK",
+					"function": {
+						"short": "PG2",
+						"long": "Power Ground (Main Relay), A2"
+					}
+				},
+				{
+					"pin": 5,
+					"wireColor": "LIGHT BLUE",
+					"function": {
+						"short": "INJ3",
+						"long": "Injector 3 +"
+					},
+					"test": "1.5V - 2.5 Ohms"
+				},
+				{
+					"pin": 6,
+					"wireColor": "BLUE",
+					"function": {
+						"short": "PCS",
+						"long": "Purge Control Solenoid"
+					},
+					"test": "Coolant Temp > 154F: 12V when activated"
+				},
+				{
+					"pin": 7,
+					"wireColor": "YELLOW",
+					"function": {
+						"short": "INJ4",
+						"long": "Injector 4 +"
+					},
+					"test": "1.5V - 2.5 Ohms"
+				},
+				{
+					"pin": 8,
+					"variants": [
+						{
+							"wireColor": "RED",
+							"function": {
+								"short": "EGR",
+								"long": "Exhaust Gas Recycling Control Solenoid Valve"
+							},
+							"test": "'88-91 Civic, '90-91 Integra Automatic"
+						},
+						{
+							"wireColor": "GREEN/WHITE",
+							"function": {
+								"short": "VTS",
+								"long": "VTEC Spool Control Solenoid"
+							}
+						}
+					]
+				},
+				{
+					"pin": 10,
+					"wireColor": "GREEN",
+					"function": {
+						"short": "",
+						"long": "Pressure Regulator Cut-off Solenoid"
+					}
+				},
+				{
+					"pin": 11,
+					"wireColor": "BLUE/YELLOW",
+					"function": {
+						"short": "IACV (EACV)",
+						"long": "Idle Air Control Valve"
+					},
+					"test": "12V to A2, Unplugged 8-15 Ohms"
+				},
+				{
+					"pin": 12,
+					"wireColor": "GREEN/BLACK",
+					"function": {
+						"short": "FLR1",
+						"long": "Main Relay 8"
+					}
+				},
+				{
+					"pin": 13,
+					"wireColor": "YELLOW/BLACK",
+					"function": {
+						"short": "IGP1",
+						"long": "Injector resistor pack and Main Relay Power"
+					},
+					"test": "Main Relay 3"
+				},
+				{
+					"pin": 14,
+					"wireColor": "GREEN/BLACK",
+					"function": {
+						"short": "FLR2",
+						"long": "Main Relay 8"
+					},
+					"test": "redundant"
+				},
+				{
+					"pin": 15,
+					"wireColor": "YELLOW/BLACK",
+					"function": {
+						"short": "IGP2",
+						"long": "Injector resistor pack and Main Relay Power"
+					},
+					"test": "redundant"
+				},
+				{
+					"pin": 16,
+					"wireColor": "BROWN/BLACK",
+					"function": {
+						"short": "LG2",
+						"long": "Logic Ground"
+					},
+					"test": "Less than 1V at all times"
+				},
+				{
+					"pin": 17,
+					"wireColor": "BLACK/YELLOW",
+					"function": {
+						"short": "EACV (IACV)",
+						"long": "Idle Air Control Valve"
+					},
+					"test": "Dash fuse #14"
+				},
+				{
+					"pin": 18,
+					"wireColor": "BLACK/RED",
+					"function": {
+						"short": "LG1",
+						"long": "Logic Ground"
+					},
+					"test": "Less than 1V at all times"
+				}
+			]
+		},
+		"C452": {
+			"name": "B (20 Pin)",
+			"pins": [
+				{
+					"pin": 1,
+					"wireColor": "WHITE/GREEN",
+					"function": {
+						"short": "VBU",
+						"long": "Voltage Backup"
+					},
+					"test": "Hazard Fuse under hood"
+				},
+				{
+					"pin": 2,
+					"variants": [
+						{
+							"wireColor": "BLUE/YELLOW",
+							"function": {
+								"short": "TCS",
+								"long": "Tandem Control Solenoid (Fast Idle)"
+							},
+							"vehicle": "Integra"
+						},
+						{
+							"wireColor": "BLUE",
+							"function": {
+								"short": "DSCV",
+								"long": "Dashpot Control Solenoid Valve"
+							},
+							"vehicle": "Civic"
+						}
+					]
+				},
+				{
+					"pin": 3,
+					"wireColor": "YELLOW",
+					"function": {
+						"short": "ACC",
+						"long": "AC Clutch Relay"
+					},
+					"test": "Connect to A18, clutch should click"
+				},
+				{
+					"pin": 4,
+					"variants": [
+						{
+							"wireColor": "YELLOW/GREEN",
+							"function": {
+								"short": "FANC",
+								"long": "Radiator Fan Control"
+							},
+							"test": "Fan Running: 0V",
+							"vehicle": "Integra"
+						},
+						{
+							"wireColor": "GREEN",
+							"function": {
+								"short": "PCS",
+								"long": "Purge Cut-off Solenoid Valve"
+							},
+							"vehicle": "Civic"
+						},
+						{
+							"wireColor": "BLUE/WHITE",
+							"function": {
+								"short": "A/T Control Unit",
+								"long": "Automatic"
+							},
+							"test": "Integra",
+							"vehicle": "Integra"
+						}
+					]
+				},
+				{
+					"pin": 5,
+					"variants": [
+						{
+							"wireColor": "WHITE/YELLOW",
+							"function": {
+								"short": "ALT C",
+								"long": "Alternator Control"
+							},
+							"test": "12 - 0V"
+						},
+						{
+							"wireColor": "BLUE/BLACK",
+							"function": {
+								"short": "VTM",
+								"long": "VTEC Pressure Switch (B16)"
+							}
+						}
+					]
+				},
+				{
+					"pin": 6,
+					"wireColor": "GREEN/ORANGE",
+					"function": {
+						"short": "MIL",
+						"long": "Malfunction Indicator Light"
+					},
+					"test": "CEL On when grounded"
+				},
+				{
+					"pin": 7,
+					"wireColor": "BLUE/WHITE",
+					"function": {
+						"short": "ATSP",
+						"long": "A/T Shift Position Signal"
+					},
+					"test": "5V to A18"
+				},
+				{
+					"pin": 8,
+					"wireColor": "BLUE/RED",
+					"function": {
+						"short": "ACS +",
+						"long": "AC Switch"
+					},
+					"test": "5V to A18"
+				},
+				{
+					"pin": 10,
+					"wireColor": "ORANGE",
+					"function": {
+						"short": "CKP P",
+						"long": "Crank Position + (Distributor)"
+					},
+					"test": "Resistance to C12 350-700 Ohms"
+				},
+				{
+					"pin": 11,
+					"wireColor": "BLACK/GREEN",
+					"function": {
+						"short": "",
+						"long": "Rear Defogger Switch (B16)"
+					}
+				},
+				{
+					"pin": 12,
+					"wireColor": "WHITE",
+					"function": {
+						"short": "CKP M",
+						"long": "Crank Position - (Distributor)"
+					}
+				},
+				{
+					"pin": 13,
+					"wireColor": "BLUE/WHITE",
+					"function": {
+						"short": "STS",
+						"long": "Starter Switch Signal to Main Relay 4"
+					},
+					"test": "Engine cranking: 12V"
+				},
+				{
+					"pin": 14,
+					"wireColor": "BLUE",
+					"function": {
+						"short": "ALT FR",
+						"long": "Alternator Charging Signal"
+					},
+					"test": "5V to A18"
+				},
+				{
+					"pin": 15,
+					"wireColor": "WHITE",
+					"function": {
+						"short": "ICM1",
+						"long": "Ignition Control Module"
+					},
+					"test": "10V to A18"
+				},
+				{
+					"pin": 16,
+					"wireColor": "YELLOW/RED",
+					"function": {
+						"short": "VSS",
+						"long": "Vehicle Speed Sensor (Gauge cluster)"
+					},
+					"test": "Ignition on, Front wheels rotating: 0 - 5V cycles"
+				},
+				{
+					"pin": 17,
+					"wireColor": "WHITE",
+					"function": {
+						"short": "ICM2",
+						"long": "Ignition Control Module"
+					},
+					"test": "redundant"
+				},
+				{
+					"pin": 19,
+					"variants": [
+						{
+							"wireColor": "RED/BLUE",
+							"function": {
+								"short": "KS",
+								"long": "Knock Sensor"
+							}
+						},
+						{
+							"wireColor": "RED",
+							"function": {
+								"short": "PSP SW",
+								"long": "Power Steering Pressure Switch"
+							},
+							"test": "Turn steering wheel, 12V to A18"
+						},
+						{
+							"wireColor": "GREEN/RED",
+							"function": {
+								"short": "ELD",
+								"long": "Electric Load Detector"
+							}
+						}
+					]
+				},
+				{
+					"pin": 20,
+					"wireColor": "BROWN",
+					"function": {
+						"short": "Service Check Signal (SCS)",
+						"long": "Enables Diagnostic mode"
+					},
+					"test": "Jumpered for Ignition Timing Adjustment"
+				}
+			]
+		},
+		"C453": {
+			"name": "C (16 Pin)",
+			"pins": [
+				{
+					"pin": 1,
+					"wireColor": "BLUE/GREEN",
+					"function": {
+						"short": "CYP P",
+						"long": "Cylinder Position + (Distributor)"
+					},
+					"test": "Resistance to C2 350-700 Ohms"
+				},
+				{
+					"pin": 2,
+					"wireColor": "BLUE/YELLOW",
+					"function": {
+						"short": "CYP M",
+						"long": "Cylinder Position - (Distributor)"
+					}
+				},
+				{
+					"pin": 3,
+					"wireColor": "ORANGE/BLUE",
+					"function": {
+						"short": "TDC P",
+						"long": "Top Dead Center + (Distributor)"
+					},
+					"test": "Resistance to C4 350-700 Ohms"
+				},
+				{
+					"pin": 4,
+					"wireColor": "WHITE/BLUE",
+					"function": {
+						"short": "TDC M",
+						"long": "Top Dead Center - (Distributor)"
+					}
+				},
+				{
+					"pin": 5,
+					"wireColor": "RED/YELLOW",
+					"function": {
+						"short": "IAT (TA)",
+						"long": "Intake Air Temperature"
+					},
+					"test": "5V, Sensor resistance (unplugged) 1-4k Ohms"
+				},
+				{
+					"pin": 6,
+					"wireColor": "RED/WHITE",
+					"function": {
+						"short": "ECT (TW)",
+						"long": "Engine Coolant Temperature"
+					},
+					"test": "5V, Sensor resistance (unplugged) 200-400 Ohm"
+				},
+				{
+					"pin": 7,
+					"wireColor": "RED/BLUE",
+					"function": {
+						"short": "TPS",
+						"long": "Throttle Position Sensor"
+					},
+					"test": "Fully Open: 4.5V, Closed: .3V"
+				},
+				{
+					"pin": 8,
+					"wireColor": "RED/BLUE",
+					"function": {
+						"short": "SO2S",
+						"long": "2nd Oxygen Sensor (B16)"
+					}
+				},
+				{
+					"pin": 9,
+					"wireColor": "RED/WHITE",
+					"function": {
+						"short": "PA Sensor",
+						"long": "Atmospheric Pressure (Barometric) Signal"
+					},
+					"test": "5V"
+				},
+				{
+					"pin": 10,
+					"wireColor": "GREEN/WHITE",
+					"function": {
+						"short": "BKSW",
+						"long": "Brake Switch signal +"
+					},
+					"test": "Brake pressed: 12V"
+				},
+				{
+					"pin": 11,
+					"wireColor": "WHITE",
+					"function": {
+						"short": "MAP +",
+						"long": "Manifold Absolute Pressure"
+					},
+					"test": "3V"
+				},
+				{
+					"pin": 12,
+					"wireColor": "GREEN/WHITE",
+					"function": {
+						"short": "SG2",
+						"long": "Sensor Ground (TPS, IAT)"
+					},
+					"test": "5V -"
+				},
+				{
+					"pin": 13,
+					"wireColor": "YELLOW/WHITE",
+					"function": {
+						"short": "VCC2",
+						"long": "Sensor Voltage (TPS / PA Sensor)"
+					},
+					"test": "5V +"
+				},
+				{
+					"pin": 14,
+					"wireColor": "GREEN/WHITE",
+					"function": {
+						"short": "SG1",
+						"long": "Sensor Ground (MAP)"
+					},
+					"test": "5V -"
+				},
+				{
+					"pin": 15,
+					"wireColor": "YELLOW/RED",
+					"function": {
+						"short": "VCC1",
+						"long": "Sensor Voltage (MAP)"
+					},
+					"test": "5V +"
+				},
+				{
+					"pin": 16,
+					"wireColor": "WHITE",
+					"function": {
+						"short": "PO2S",
+						"long": "Primary Oxygen Sensor"
+					}
+				}
+			]
+		}
+	},
+	"strutTowerPlugs": {
+		"C210": {
+			"name": "Passenger-side round plug",
+			"pins": [
+				{
+					"pin": 1,
+					"wireColor": "BLACK/RED",
+					"function": {
+						"short": "LG",
+						"long": "Logic ground to A18"
+					}
+				},
+				{
+					"pin": 2,
+					"wireColor": "BROWN/BLACK",
+					"function": {
+						"short": "LG",
+						"long": "Thermostat housing ground to A16"
+					}
+				},
+				{
+					"pin": 3,
+					"wireColor": "WHITE",
+					"function": {
+						"short": "O2 Sensor",
+						"long": "O2 Sensor to C16"
+					}
+				},
+				{
+					"pin": 4,
+					"wireColor": "RED/WHITE",
+					"function": {
+						"short": "ECT (TW)",
+						"long": "Coolant Temp to C6"
+					}
+				},
+				{
+					"pin": 5,
+					"wireColor": "RED/YELLOW",
+					"function": {
+						"short": "IAT (TA)",
+						"long": "Intake Air Temperature C5"
+					}
+				},
+				{
+					"pin": 6,
+					"wireColor": "GREEN/WHITE",
+					"function": {
+						"short": "SG Sensor Ground",
+						"long": "TW TA TPS (TW, TA, TAS) to C12"
+					}
+				},
+				{
+					"pin": 7,
+					"wireColor": "WHITE/YELLOW",
+					"function": {
+						"short": "ALT C",
+						"long": "Alternator to B5"
+					}
+				},
+				{
+					"pin": 8,
+					"wireColor": "ORANGE/BLUE",
+					"function": {
+						"short": "TDC P",
+						"long": "Top dead center to C3"
+					}
+				},
+				{
+					"pin": 9,
+					"wireColor": "YELLOW/BLUE",
+					"function": {
+						"short": "ALT FR",
+						"long": "Alternator to B14"
+					}
+				},
+				{
+					"pin": 10,
+					"wireColor": "YELLOW/WHITE",
+					"function": {
+						"short": "TPS (TAS)",
+						"long": "Throttle position sensor to C13"
+					}
+				},
+				{
+					"pin": 11,
+					"wireColor": "RED/BLUE",
+					"function": {
+						"short": "TPS (TAS)",
+						"long": "Throttle position sensor to C7"
+					}
+				},
+				{
+					"pin": 12,
+					"wireColor": "WHITE",
+					"function": {
+						"short": "CKP M (CAS)",
+						"long": "Crank Position - to B12"
+					}
+				},
+				{
+					"pin": 13,
+					"wireColor": "ORANGE",
+					"function": {
+						"short": "CKP P (CAS)",
+						"long": "Crank Position + to B10"
+					}
+				},
+				{
+					"pin": 14,
+					"wireColor": "WHITE/BLUE",
+					"function": {
+						"short": "TDC M",
+						"long": "Top dead center - to C4"
+					}
+				}
+			]
+		},
+		"C211": {
+			"name": "Passenger-side rectangle plug",
+			"pins": [
+				{
+					"pin": 1,
+					"wireColor": "BLACK/YELLOW",
+					"function": {
+						"short": "IGNITION",
+						"long": "Ignition 12V (Distributor)"
+					}
+				},
+				{
+					"pin": 2,
+					"wireColor": "BLACK/WHITE",
+					"function": {
+						"short": "STS",
+						"long": "Cranking 12V"
+					}
+				},
+				{
+					"pin": 3,
+					"wireColor": "WHITE/BLUE",
+					"function": {
+						"short": "Charging Warning Light",
+						"long": "Battery Dash Light"
+					}
+				},
+				{
+					"pin": 4,
+					"wireColor": "BLACK/YELLOW",
+					"function": {
+						"short": "Ignition 12V",
+						"long": "ALT, IACV"
+					}
+				},
+				{
+					"pin": 5,
+					"wireColor": "BLUE",
+					"function": {
+						"short": "Engine Speed",
+						"long": "Gauge Cluster Tachometer"
+					}
+				},
+				{
+					"pin": 6,
+					"wireColor": "YELLOW/GREEN",
+					"function": {
+						"short": "ECT (TW)",
+						"long": "Gauge Cluster Engine Temp"
+					}
+				},
+				{
+					"pin": 7,
+					"wireColor": "YELLOW/RED",
+					"function": {
+						"short": "Oil Warning Light",
+						"long": "Gauge cluster Oil Warning Light"
+					}
+				},
+				{
+					"pin": 8,
+					"wireColor": "BLACK",
+					"function": {
+						"short": "PG POWER GROUND",
+						"long": "Main Relay Grounds (thermostat housing)"
+					}
+				}
+			]
+		},
+		"C217": {
+			"name": "Passenger-side '88 Si only",
+			"applicableModels": {
+				"year": "1988",
+				"trim": "Si"
+			},
+			"pins": [
+				{
+					"pin": 1,
+					"wireColor": "BLUE/GREEN",
+					"function": {
+						"short": "CYP P",
+						"long": "Cylinder position to C1"
+					}
+				},
+				{
+					"pin": 2,
+					"wireColor": "WHITE",
+					"function": {
+						"short": "ICM",
+						"long": "Ignitor to B15 & B17"
+					}
+				},
+				{
+					"pin": 3,
+					"wireColor": "YELLOW",
+					"function": {
+						"short": "Backup Lights",
+						"long": "Transmission"
+					}
+				},
+				{
+					"pin": 4,
+					"wireColor": "BLUE/YELLOW",
+					"function": {
+						"short": "CYP M",
+						"long": "Cylinder position to C2"
+					}
+				},
+				{
+					"pin": 5,
+					"wireColor": "YELLOW/GREEN",
+					"function": {
+						"short": "FANC",
+						"long": "Radiator fan relay to B4"
+					}
+				},
+				{
+					"pin": 6,
+					"wireColor": "GREEN/BLACK",
+					"function": {
+						"short": "Backup Lights",
+						"long": "Transmission"
+					}
+				}
+			]
+		},
+		"C313": {
+			"name": "Driver's-side '89-91",
+			"applicableModels": {
+				"years": "1989-1991"
+			},
+			"pins": [
+				{
+					"pin": 1,
+					"wireColor": "BROWN",
+					"function": {
+						"short": "INJ 1",
+						"long": "Injector 1 to A1"
+					}
+				},
+				{
+					"pin": 2,
+					"wireColor": "RED",
+					"function": {
+						"short": "INJ 2",
+						"long": "Injector 2 to A3"
+					}
+				},
+				{
+					"pin": 3,
+					"wireColor": "LIGHT BLUE",
+					"function": {
+						"short": "INJ 3",
+						"long": "Injector 3 to A5"
+					}
+				},
+				{
+					"pin": 4,
+					"wireColor": "YELLOW",
+					"function": {
+						"short": "INJ 4",
+						"long": "Injector 4 to A7"
+					}
+				},
+				{
+					"pin": 5,
+					"wireColor": "BLUE/WHITE",
+					"function": {
+						"short": "IACV (EACV)",
+						"long": "Idle motor to A11 (BLUE/YELLOW)"
+					}
+				},
+				{
+					"pin": 6,
+					"wireColor": "YELLOW/BLACK",
+					"function": {
+						"short": "IGP",
+						"long": "Main relay to Resistor Pack"
+					}
+				}
+			]
+		}
+	},
+	"distributorConnectors": [
+		{
+			"pins": [
+				{
+					"pin": 1,
+					"wireColor": "WHITE/BLUE",
+					"function": {
+						"short": "TDC M",
+						"long": "C4 Top Dead Center -"
+					}
+				},
+				{
+					"pin": 2,
+					"wireColor": "ORANGE/BLUE",
+					"function": {
+						"short": "TDC P",
+						"long": "C3 Top Dead Center +"
+					}
+				},
+				{
+					"pin": 4,
+					"wireColor": "WHITE",
+					"function": {
+						"short": "CKP M",
+						"long": "B12 Crank Position -"
+					}
+				},
+				{
+					"pin": 5,
+					"wireColor": "ORANGE",
+					"function": {
+						"short": "CKP P",
+						"long": "B10 Crank Position +"
+					}
+				},
+				{
+					"pin": 6,
+					"wireColor": "WHITE",
+					"function": {
+						"short": "ICM",
+						"long": "B15, B17 Ignition Control Module"
+					}
+				},
+				{
+					"pin": 7,
+					"wireColor": "BLUE/YELLOW",
+					"function": {
+						"short": "CYP M",
+						"long": "C2 Cylinder Position -"
+					}
+				},
+				{
+					"pin": 8,
+					"wireColor": "BLUE/GREEN",
+					"function": {
+						"short": "CYP P",
+						"long": "C1 Cylinder Position +"
+					}
+				}
+			]
+		},
+		{
+			"pins": [
+				{
+					"pin": 1,
+					"wireColor": "BLACK/YELLOW",
+					"function": {
+						"short": "IGP (Ignition 12V)",
+						"long": "Fuse 13, Ignition Switch"
+					}
+				},
+				{
+					"pin": 2,
+					"wireColor": "BLUE",
+					"function": {
+						"short": "TACH Engine Speed (RPM)",
+						"long": "Gauge Cluster"
+					}
+				}
+			]
+		}
+	]
+}
