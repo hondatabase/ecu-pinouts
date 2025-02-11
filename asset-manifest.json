@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/web-honda-pinouts/static/css/main.618fa5f7.css",
-    "main.js": "/web-honda-pinouts/static/js/main.fb3550a4.js",
-    "static/js/787.84e2d16c.chunk.js": "/web-honda-pinouts/static/js/787.84e2d16c.chunk.js",
-    "index.html": "/web-honda-pinouts/index.html",
-    "main.618fa5f7.css.map": "/web-honda-pinouts/static/css/main.618fa5f7.css.map",
-    "main.fb3550a4.js.map": "/web-honda-pinouts/static/js/main.fb3550a4.js.map",
-    "787.84e2d16c.chunk.js.map": "/web-honda-pinouts/static/js/787.84e2d16c.chunk.js.map"
+    "main.css": "/static/css/main.3610b415.css",
+    "main.js": "/static/js/main.65dd8ddb.js",
+    "static/js/453.faa5cd3c.chunk.js": "/static/js/453.faa5cd3c.chunk.js",
+    "index.html": "/index.html",
+    "main.3610b415.css.map": "/static/css/main.3610b415.css.map",
+    "main.65dd8ddb.js.map": "/static/js/main.65dd8ddb.js.map",
+    "453.faa5cd3c.chunk.js.map": "/static/js/453.faa5cd3c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.618fa5f7.css",
-    "static/js/main.fb3550a4.js"
+    "static/css/main.3610b415.css",
+    "static/js/main.65dd8ddb.js"
   ]
 }
