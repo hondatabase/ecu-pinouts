@@ -1,0 +1,516 @@
+{
+	"metadata": {
+		"title": "Honda OBD1 Pinout",
+		"applicableVehicles": [
+			{
+				"make": "Honda",
+				"model": "Civic",
+				"years": "1992-1995"
+			},
+			{
+				"make": "Honda",
+				"model": "Integra",
+				"years": "1992-1995"
+			}
+		]
+	},
+	"ecuConnectors": {
+		"C404": {
+			"name": "A (26 Pin)",
+			"pins": [
+				{
+					"pin": 1,
+					"wireColor": "BROWN",
+					"function": {
+						"short": "INJ1",
+						"long": "Injector 1"
+					},
+					"test": "Ignition On: 12V, Engine running: (-) Pulses"
+				},
+				{
+					"pin": 2,
+					"wireColor": "YELLOW",
+					"function": {
+						"short": "INJ4",
+						"long": "Injector 4"
+					},
+					"test": "Ignition On: 12V, Engine running: (-) Pulses"
+				},
+				{
+					"pin": 3,
+					"wireColor": "RED",
+					"function": {
+						"short": "INJ2",
+						"long": "Injector 2"
+					},
+					"test": "Ignition On: 12V, Engine running: (-) Pulses"
+				},
+				{
+					"pin": 4,
+					"variants": [
+						{
+							"wireColor": "ORANGE/WHITE",
+							"function": {
+								"short": "VTS",
+								"long": "VTEC Solenoid Valve"
+							},
+							"test": "Low RPM: 0V, High RPM: 12V",
+							"vehicle": "Civic"
+						},
+						{
+							"wireColor": "GREEN/YELLOW",
+							"function": {
+								"short": "VTS",
+								"long": "VTEC Solenoid Valve"
+							},
+							"test": "Low RPM: 0V, High RPM: 12V",
+							"vehicle": "Integra"
+						}
+					]
+				},
+				{
+					"pin": 5,
+					"variants": [
+						{
+							"wireColor": "LIGHT BLUE",
+							"function": {
+								"short": "INJ3",
+								"long": "Injector 3"
+							},
+							"vehicle": "Civic"
+						},
+						{
+							"wireColor": "BLUE",
+							"function": {
+								"short": "INJ3",
+								"long": "Injector 3"
+							},
+							"vehicle": "Integra"
+						}
+					],
+					"test": "Ignition On: 12V, Engine running: (-) Pulses"
+				},
+				{
+					"pin": 6,
+					"wireColor": "ORANGE/BLACK",
+					"function": {
+						"short": "PO2SHTC",
+						"long": "Primary O2 Sensor Heater Control"
+					},
+					"test": "Ignition On: 12V, Operating Temperature: 0V"
+				},
+				{
+					"pin": 7,
+					"variants": [
+						{
+							"wireColor": "GREEN/YELLOW",
+							"function": {
+								"short": "FLR",
+								"long": "Fuel Relay (Main Relay)"
+							},
+							"vehicle": "Civic"
+						},
+						{
+							"wireColor": "GREEN/BLUE",
+							"function": {
+								"short": "FLR",
+								"long": "Fuel Relay (Main Relay)"
+							},
+							"vehicle": "Integra"
+						}
+					],
+					"test": "0V when activated, 12V resting"
+				},
+				{
+					"pin": 8,
+					"variants": [
+						{
+							"wireColor": "GREEN/YELLOW",
+							"function": {
+								"short": "FLR",
+								"long": "Fuel Relay (Main Relay)"
+							},
+							"vehicle": "Civic"
+						},
+						{
+							"wireColor": "GREEN/BLUE",
+							"function": {
+								"short": "FLR",
+								"long": "Fuel Relay (Main Relay)"
+							},
+							"vehicle": "Integra"
+						}
+					],
+					"test": "Redundant"
+				},
+				{
+					"pin": 9,
+					"variants": [
+						{
+							"wireColor": "GREEN/WHITE",
+							"function": {
+								"short": "IACV",
+								"long": "Idle Air Control Valve"
+							},
+							"vehicle": "Civic (to BLUE/YELLOW)"
+						},
+						{
+							"wireColor": "BLACK/BLUE",
+							"function": {
+								"short": "IACV",
+								"long": "Idle Air Control Valve"
+							},
+							"vehicle": "Integra"
+						}
+					],
+					"test": "Idle: 6 - 10V"
+				},
+				{
+					"pin": 11,
+					"wireColor": "ORANGE/BLUE",
+					"function": {
+						"short": "EGR",
+						"long": "EGR Control Solenoid"
+					},
+					"test": "On: Duty controlled, Off: 0V",
+					"notes": "Drives EGR valve (VX)"
+				},
+				{
+					"pin": 12,
+					"variants": [
+						{
+							"wireColor": "YELLOW/GREEN",
+							"function": {
+								"short": "FANC",
+								"long": "Radiator Fan Switch"
+							},
+							"vehicle": "Civic"
+						},
+						{
+							"wireColor": "GREEN",
+							"function": {
+								"short": "FANC",
+								"long": "Radiator Fan Switch"
+							},
+							"vehicle": "Integra"
+						}
+					],
+					"test": "Fan Running: 0V"
+				},
+				{
+					"pin": 13,
+					"wireColor": "GREEN/ORANGE",
+					"function": {
+						"short": "MIL",
+						"long": "Malfunction Indicator Light"
+					},
+					"test": "On: 0V, Off: 12V"
+				},
+				{
+					"pin": 15,
+					"wireColor": "BLACK/RED",
+					"function": {
+						"short": "ACC",
+						"long": "A/C Compressor Clutch"
+					},
+					"test": "AC On: 0V, AC Off: 12V"
+				},
+				{
+					"pin": 16,
+					"variants": [
+						{
+							"wireColor": "WHITE/YELLOW",
+							"function": {
+								"short": "ALTC",
+								"long": "Alternator Control"
+							},
+							"vehicle": "Civic"
+						},
+						{
+							"wireColor": "WHITE/GREEN",
+							"function": {
+								"short": "ALTC",
+								"long": "Alternator Control"
+							},
+							"vehicle": "Integra"
+						}
+					],
+					"test": "12 - 0V"
+				},
+				{
+					"pin": 17,
+					"wireColor": "PINK/BLUE",
+					"function": {
+						"short": "IAB SOL",
+						"long": "Intake Air Bypass"
+					},
+					"test": "Below 5750RPM: 12V",
+					"notes": "GSR B18C1 only"
+				},
+				{
+					"pin": 19,
+					"wireColor": "WHITE",
+					"function": {
+						"short": "ICS",
+						"long": "Intake Control Solenoid"
+					},
+					"notes": "H22A only"
+				},
+				{
+					"pin": 20,
+					"wireColor": "RED",
+					"variants": [
+						{
+							"wireColor": "RED/BLACK"
+						},
+						{
+							"wireColor": "RED"
+						}
+					],
+					"function": {
+						"short": "PCS",
+						"long": "Purge Control Solenoid"
+					},
+					"test": "Coolant Temp > 154F: 12V when activated"
+				},
+				{
+					"pin": 21,
+					"variants": [
+						{
+							"wireColor": "RED/GREEN",
+							"function": {
+								"short": "ICM",
+								"long": "Ignition Control Module"
+							},
+							"vehicle": "Civic"
+						},
+						{
+							"wireColor": "YELLOW/GREEN",
+							"function": {
+								"short": "ICM",
+								"long": "Ignition Control Module"
+							},
+							"vehicle": "Integra"
+						}
+					],
+					"test": "Key (III): 12V, Engine running: pulses"
+				},
+				{
+					"pin": 22,
+					"wireColor": "RED/GREEN",
+					"function": {
+						"short": "ICM",
+						"long": "Ignition Control Module"
+					},
+					"test": "Key (III): 12V, Engine running: pulses",
+					"notes": "Civic only, redundant"
+				},
+				{
+					"pin": 23,
+					"wireColor": "BLACK",
+					"function": {
+						"short": "PG1",
+						"long": "Power Ground 1 (Main Relay, VTP SW, G101)"
+					},
+					"test": "Less than 1V at all times"
+				},
+				{
+					"pin": 24,
+					"wireColor": "BLACK",
+					"function": {
+						"short": "PG2",
+						"long": "Power Ground 2 (Main Relay, VTP SW, G101)"
+					},
+					"test": "Less than 1V at all times"
+				},
+				{
+					"pin": 25,
+					"wireColor": "YELLOW/BLACK",
+					"function": {
+						"short": "IGP2",
+						"long": "Ignition Power Ground 2, Main Relay, Junction, INJ"
+					},
+					"test": "Key (II): 12V"
+				},
+				{
+					"pin": 26,
+					"variants": [
+						{
+							"wireColor": "BLACK/RED",
+							"function": {
+								"short": "LG1",
+								"long": "Logic Ground 1"
+							},
+							"vehicle": "Civic"
+						},
+						{
+							"wireColor": "BROWN/BLACK",
+							"function": {
+								"short": "LG1",
+								"long": "Logic Ground 1"
+							},
+							"vehicle": "Integra"
+						}
+					],
+					"test": "Less than 1V at all times"
+				}
+			]
+		},
+		"C405": {
+			"name": "B (16 Pin)",
+			"pins": [
+				{
+					"pin": 1,
+					"wireColor": "YELLOW/BLACK",
+					"function": {
+						"short": "IGP1",
+						"long": "Ignition Power 1, Main Relay, Junction, INJ"
+					},
+					"test": "Ignition On: 12V"
+				},
+				{
+					"pin": 2,
+					"wireColor": "BROWN/BLACK",
+					"function": {
+						"short": "LG2",
+						"long": "Logic Ground 2"
+					},
+					"test": "Less than 1V at all times"
+				},
+				{
+					"pin": 5,
+					"wireColor": "BLUE/RED",
+					"function": {
+						"short": "ACS",
+						"long": "AC Switch"
+					},
+					"test": "AC switch On: 0V, AC Switch Off: 12V"
+				},
+				{
+					"pin": 7,
+					"wireColor": "PINK/BLACK",
+					"function": {
+						"short": "CLSW",
+						"long": "Clutch Switch (VX)"
+					}
+				},
+				{
+					"pin": 8,
+					"variants": [
+						{
+							"wireColor": "BROWN/RED",
+							"function": {
+								"short": "PSP SW",
+								"long": "Power Steering Pressure Switch"
+							},
+							"vehicle": "Civic"
+						},
+						{
+							"wireColor": "GREEN",
+							"function": {
+								"short": "PSP SW",
+								"long": "Power Steering Pressure Switch"
+							},
+							"vehicle": "Integra"
+						}
+					],
+					"test": "When steering: 12V"
+				},
+				{
+					"pin": 9,
+					"wireColor": "BLUE/WHITE",
+					"function": {
+						"short": "STS",
+						"long": "Starter Switch Signal"
+					},
+					"test": "Engine cranking: 12V",
+					"notes": "Detects starting, Main Relay"
+				},
+				{
+					"pin": 10,
+					"variants": [
+						{
+							"wireColor": "YELLOW/BLUE",
+							"function": {
+								"short": "VSS",
+								"long": "Vehicle Speed Sensor"
+							},
+							"vehicle": "Civic (to YELLOW/WHITE)"
+						},
+						{
+							"wireColor": "ORANGE",
+							"function": {
+								"short": "VSS",
+								"long": "Vehicle Speed Sensor"
+							},
+							"vehicle": "Integra"
+						}
+					],
+					"test": "Ignition on, Front wheels rotating: 0 - 5V cycles"
+				},
+				{
+					"pin": 11,
+					"wireColor": "ORANGE",
+					"function": {
+						"short": "CYP P",
+						"long": "Cylinder Position (Power)"
+					},
+					"test": "Engine running: Pulses"
+				},
+				{
+					"pin": 12,
+					"wireColor": "WHITE",
+					"function": {
+						"short": "CYP M",
+						"long": "Cylinder Position (Ground)"
+					}
+				},
+				{
+					"pin": 13,
+					"wireColor": "ORANGE/BLUE",
+					"function": {
+						"short": "TDC P",
+						"long": "Top Dead Center (Power)"
+					},
+					"test": "Engine running: Pulses"
+				},
+				{
+					"pin": 14,
+					"wireColor": "WHITE/BLUE",
+					"function": {
+						"short": "TDC M",
+						"long": "Top Dead Center (Ground)"
+					}
+				},
+				{
+					"pin": 15,
+					"wireColor": "BLUE/GREEN",
+					"function": {
+						"short": "CKP P",
+						"long": "Crank Position (Power)"
+					},
+					"test": "Engine running: Pulses"
+				},
+				{
+					"pin": 16,
+					"wireColor": "BLUE/YELLOW",
+					"function": {
+						"short": "CKP M",
+						"long": "Crank Position (Ground)"
+					}
+				}
+			]
+		},
+		"C406": {
+			"name": "D (22 Pin)",
+			"pins": [
+				{
+					"pin": 1,
+					"wireColor": "WHITE/BLUE",
+					"function": {
+						"short": "VBU",
+						"long": "Voltage Backup"
+					},
+					"test": "12V",
+					"notes": "ECU Power source"
+				},
