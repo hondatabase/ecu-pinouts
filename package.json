@@ -14,7 +14,7 @@
 	},
 	"scripts": {
 		"predeploy": "npm run build",
-		"deploy": "gh-pages -d build",
+		"deploy": "gh-pages -d build --cname ecu-pinouts.hondatabase.com",
 		"start": "react-scripts start",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
@@ -37,5 +37,11 @@
 			"last 1 firefox version",
 			"last 1 safari version"
 		]
+	},
+	"devDependencies": {
+		"@babel/core": "^7.26.8",
+		"@babel/plugin-transform-react-jsx": "^7.25.9",
+		"@babel/preset-react": "^7.26.3",
+		"babel-preset-react-app": "^10.0.1"
 	}
 }

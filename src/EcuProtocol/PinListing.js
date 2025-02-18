@@ -26,9 +26,9 @@ const PinListing = ({ protocol, pinsData, onBack }) => {
 	);
 	
 	return (
-		<div className="contentWrapper">
+		<div id="pinListing">
 			<button onClick={onBack}>Back</button>
-			<input type="text" placeholder="Search Pins" onChange={e => setSearchTerm(e.target.value)} />
+			<input type="search" placeholder="Search Pins" onChange={e => setSearchTerm(e.target.value)} />
 			<div id="pinsContainer">
 				{filteredPins.map((pin, index) => <PinCard key={index} pinData={pin} />)}
 			</div>

@@ -1,53 +1,207 @@
 body {
-	margin-top: 15px;
-	background-color: #282c34;
-	min-height: 100vh;
-	color: white;
+	overflow-y: scroll;
 }
 
-.contentWrapper {
+#protocolList {
 	display: flex;
-	align-items: center;
+	gap: 1rem;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 1rem;
+	position: relative;
+}
+  
+.protocol {
+	background: var(--card-bg);
+	border: 1px solid var(--border);
+	border-radius: 2rem;
+	padding: 0.75rem 1.5rem;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	text-align: center;
+	min-width: 120px;
+}
+
+.protocol:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	border-color: var(--primary);
+}
+
+.protocol .protocol-name {
+	font-weight: 600;
+	font-size: 1.1rem;
+	margin-bottom: 0.25rem;
+}
+
+.protocol .protocol-year {
+	font-size: 0.8rem;
+	color: var(--text-secondary);
+}
+
+button, 
+input[type="button"],
+input[type="submit"] {
+	background: var(--primary);
+	color: var(--background-light);
+	border: none;
+	padding: 8px 16px;
+	border-radius: 4px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	cursor: pointer;
+	transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover {
+	background: var(--secondary);
+	transform: translateY(-1px);
+}
+
+button:active,
+input[type="button"]:active,
+input[type="submit"]:active {
+	transform: translateY(0);
+}
+
+input[type="text"],
+input[type="search"],
+input[type="number"],
+select {
+	background: var(--card-bg);
+	border: 1px solid var(--border);
+	color: var(--text);
+	padding: 8px 12px;
+	border-radius: 4px;
+	font-family: 'Roboto', sans-serif;
+	transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+select:focus {
+	outline: none;
+	border-color: var(--primary);
+	box-shadow: 0 0 0 2px rgba(227, 6, 19, 0.2);
+}
+
+#pinListing {
+	display: flex;
+	align-items: stretch;
 	flex-wrap: wrap;
 	justify-content: center;
 	width: 100%;
+	gap: 1rem;
+	animation: fadeInUp 0.5s ease forwards;
 }
 
 .pinCard {
-	padding: 5px 10px;
-	border-radius: 5px;
-	margin: 5px;
-	border: 1px solid #212225;
-	font-size: 12px;
-	width: 100%;
-	background-color: #282c34;
+	background-color: #f8f8f8;
+	border: 1px solid var(--border);
+	border-radius: 0.5rem;
+	padding: 1rem;
+	margin: 0;
 	width: 200px;
+	display: flex;
+	flex-direction: column;
+	transition: all 0.2s ease-in-out;
+	cursor: default;
+	min-height: 110px;
 }
 
-.pinCard div:nth-child(1) {
-	font-size: 1rem;
-	font-weight: bold;
-	margin-bottom: 5px;
-}
-
-.pinCard div:nth-child(2) {
-	margin-bottom: 5px;
+.pinCard:hover {
+	background-color: #f8f8f8;
+	transform: translateY(-3px);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 #pinsContainer {
-	padding: 15px;
-	margin-top: 1%;
+	padding: 1rem;
+	margin-top: 1rem;
 	width: 100%;
-	background-color: #31353f;
 	display: flex;
-	align-items: center;
+	align-items: stretch;
 	flex-wrap: wrap;
 	justify-content: center;
+	gap: 1rem;
+}
+
+.colorContainer {
+	margin-top: auto;
+	display: flex;
+	align-items: center;
+	text-align: center;
 }
 
 .color {
+	min-width: 20px;
 	width: 20px;
 	height: 20px;
+	border: 1px solid black;
 	border-radius: 50%;
 	margin-right: 10px;
+}
+
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.tooltip-container {
+	position: fixed;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1000;
+	pointer-events: none;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.tooltip-message {
+	background: rgba(0, 0, 0, 0.9);
+	color: #fff;
+	padding: 12px 20px;
+	border-radius: 8px;
+	font-size: 0.9rem;
+	max-width: 300px;
+	text-align: center;
+	opacity: 0;
+	transform: translateY(20px);
+	transition: opacity 0.3s ease, transform 0.3s ease;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.tooltip-message.show {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+	.tooltip .tooltip-content {
+		position: fixed;
+		bottom: 20px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 90%;
+		max-width: 300px;
+		background: rgba(0, 0, 0, 0.9);
+		padding: 12px 16px;
+		border-radius: 8px;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+	}
+
+	.tooltip .tooltip-content::after {
+		display: none;
+	}
 }
